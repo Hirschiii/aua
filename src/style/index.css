@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.block-first {
+    position: relative;
+}
+
+.article_teaser {
+    position: relative;
+    min-width: 0;
+    will-change: opacity;
+    overflow: hidden;
+}
+
+.dynamic {
+    aspect-ratio: auto;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
