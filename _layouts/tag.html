@@ -1,0 +1,9 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div class="entries-{{ page.entries_layout | default: 'grid' }}">
+  {% include posts-tag.html taxonomy=page.taxonomy %}
+</div>
