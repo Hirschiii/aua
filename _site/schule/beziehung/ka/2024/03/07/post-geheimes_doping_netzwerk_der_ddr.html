@@ -36,6 +36,22 @@
 
   
 
+  <!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//gulugulu.uber.space/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
   <script>
     /* Cut the mustard */
     if ( 'querySelector' in document && 'addEventListener' in window ) {
@@ -223,7 +239,28 @@
         <p>Erschreckende Aufnahmen aus Carsten Knebels, einem ehemaligen DDR -Leichtathleten, Privatleben aufgetaucht. Ein AUA-Reporter hat ein Interview zu den Konfrontationen geführt. 
 Carsten Knebel, ein Mann Mitte 40, sportlich und mit kurzen Haaren. Er schaut ein wenig düster drein an diesem kühlen Frühlingstag. In der Hand eine Spritze mit einer ominösen Flüssigkeit. Anabolika? Dopingmittel?  In den letzten Jahren stieg seine Leistung überdurchschnittlich in den Disziplinen Diskus, Kugelstoßen und Speerwerfen an. Dazu sagte Carsten:“ Muss ich mich dazu jetzt äußern […]? Es gibt gewisse Mittel, die man nehmen kann. Auf genauere Fragen zu diesem Thema wollte er nicht antworten. Das gleicht einem Schuldeingeständnis. Auch über das angeblich existierende Doping-Netzwerk gab er an, „niemanden an den Pranger stellen zu wollen“. Carsten führt mit einem skurrilen Zitat, welches in den Medien große Wellen schlug, weiter aus: „Viele Hände bereiten der Arbeit ein schnelles Ende“. Weiterhin ist er der Meinung, „dass ein Produkt wachsen und gedeihen könne“. Damit meinte er wohl seine Muskeln und Ausdauer. Doch gegen Ende des Interviews zückte er kurzerhand die riesige Spritze und spritze sich die sich Substanz kurzerhand in den Unterarm. Verstörende Bilder, die er mit „seiner täglichen Dosis“ rechtfertigte. Nach AUA- Informationen beendet dieser Eklat wohl seine erfolgreiche Karriere.</p>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p4Nbb6C-9Q8?si=MUOcLnA4vmeh-CC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
       </div>
+      
+        
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://aua-zeitung.com/schule/beziehung/ka/2024/03/07/post-geheimes_doping_netzwerk_der_ddr.html';
+      this.page.identifier = 'https://aua-zeitung.com/schule/beziehung/ka/2024/03/07/post-geheimes_doping_netzwerk_der_ddr.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://aua-zeitung-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
       
     </article>
   </div>
@@ -241,6 +278,60 @@ Carsten Knebel, ein Mann Mitte 40, sportlich und mit kurzen Haaren. Er schaut ei
         </div>
       </div>
     </div>
+	<!-- Only add all this in production, why would I analyse myself when writing the post anyway. -->
+
+<!-- Add cookie consent css & js -->
+<link rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
+    data-cfasync="false"></script>
+
+<!-- Add google analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+
+<script>
+    // Reads the value of a cookie by name or returns empty string
+    function getCookie(name) {
+        var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
+        return b ? b.pop() : '';
+    }
+
+    // Waiting for the load event
+    window.addEventListener("load", function () {
+        // Reading "cookieconsent_status" cookie
+        const cookieConsent = getCookie('cookieconsent_status');
+
+        // Start analytics if user consented or did not deny
+        if (cookieConsent === 'allow' || cookieConsent === '') {
+        }
+
+        // Initialise cookie consent banner
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#efefef",
+                    "text": "#404040"
+                },
+                "button": {
+                    "background": "#8ec760",
+                    "text": "#ffffff"
+                }
+            },
+            "type": "opt-out",
+            "content": {
+                "allow": "Approve",
+                "dismiss": "Approve",
+                "deny": "Reject"
+            },
+            // Reload the page on user choice to make sure cookie is set
+            onStatusChange: function (status, chosenBefore) {
+                location.reload();
+            }
+        })
+    });
+</script>
+
 
     <footer id="footer" class="site-footer">
   <div class="inner">

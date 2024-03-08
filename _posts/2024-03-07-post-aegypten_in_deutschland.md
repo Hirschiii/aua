@@ -16,6 +16,7 @@ image:
   path: /assets/images/aegypten_in_de/title-bild.png
   thumbnail: /assets/images/aegypten_in_de/thumbnail.png
   caption: "Titel des Bild / Beschreibung"
+comments: true
 ---
 
 Alle wussten es, doch nun ist es bewiesen. Forscher fanden heraus, dass die Pyramiden in Ägypten sind eine optische Täuschung, sie stehen eigentlich auf dem Kopf. Die Ägypter haben gemerkt sie stehen auf dem Kopf viel besser. Das verrückte Haus ist also nur eine Nachbaute der Pyramiden. An der Ilmenau wurden Tiere gesichtet, man vermutet eine Verbindung zum Nil. 
